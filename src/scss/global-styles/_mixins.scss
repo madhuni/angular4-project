@@ -1,0 +1,43 @@
+// Defining the break points for the project
+
+// for the smaller devices
+@mixin atSmall {
+	@media screen and (min-width: 320px) {
+		@content;
+	}
+}
+// for the medium devices (e.g.: iPad)
+@mixin atMedium {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+// for the medium size desktops
+@mixin atLarge {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+// for the extra large devices
+@mixin atLarger {
+	@media screen and (min-width: 1201px) {
+		@content;
+	}
+}
+// full height nav-bar
+@mixin fullHeightNavbar {
+	@media screen and (max-width: 767px) {
+		@content;
+	}
+}
+// flex-box
+@mixin flexBoxRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+@mixin flexBoxCol {
+	display: flex;
+	flex-direction: column;
+}
