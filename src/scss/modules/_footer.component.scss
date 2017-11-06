@@ -17,6 +17,8 @@
       @include fullHeightNavbar {
         border-bottom: 1px solid #fff;
 
+        display: flex;
+        
         .on-small-size-only {
           display: block;
           margin: 8px auto;
