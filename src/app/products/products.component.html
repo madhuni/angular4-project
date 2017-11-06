@@ -1,0 +1,49 @@
+<div class="product" *ngFor="let product of products">
+  <!-- Video of product will go full width -->
+  <header class="product__video-section">
+    <div class="product__video-container">
+      <video loop muted autoplay poster="{{ product.header.firstFrameImage}}" class="product__video-container__video">
+        <source src="{{ product.header.productVideoSrc}}" type="video/mp4">
+      </video>
+    </div>
+    <div class="product__product-heading-container">
+      <h1 class="product__product-heading-container__heading">{{ product.header.productName }}</h1>
+      <h3 class="product__product-heading-container__sub-heading">{{ product.header.productTagLine }}</h3>
+    </div>
+  </header>
+
+  <div class="product-wrapper wrapper">
+    <section class="product__about-product">
+      <h2 class="product__about-product__heading section-heading">
+        {{ product.about.productName }}
+      </h2>
+      <p class="product__about-product__detail section-text" *ngFor="let detail of product.about.details">{{ detail }}</p>
+      <picture class="product__about-product__image">
+        <source srcset="{{ product.about.pictures.largerSizeImage }} 1920w" media="(min-width: 1201px)">
+        <source srcset="{{ product.about.pictures.largeSizeImage }} 1201w" media="(min-width: 1024px)">
+        <source srcset="{{ product.about.pictures.mediumSizeImage }} 1024w" media="(min-width: 768px)">
+        <source srcset="{{ product.about.pictures.smallSizeImage }} 768w" media="(min-width: 320px)">
+        <img srcset="{{ product.about.pictures.defaultImage }} 320w" alt="Pentagram Image">
+      </picture>
+    </section>
+
+    <section class="product__features">
+      <h2 class="product__features__heading section-heading">
+        Features
+      </h2>
+      <ul class="product__features__features-list">
+        <li class="product__features__features-list__item" *ngFor="let feature of product.features">
+          <img src="{{ feature.featureImage }}" alt="{{ feature.altNameForImage }}" class="feature-image" width="168" height="168">
+          <h3 class="feature-heading">{{ feature.featureName }}</h3>
+          <p class="feature-detail">{{ feature.featureDetail }}</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="product__tech-specs">
+      <h2 class="product__tech-specs__heading section-heading">
+        Technical Specifications
+      </h2>
+    </section>
+  </div>
+</div>
