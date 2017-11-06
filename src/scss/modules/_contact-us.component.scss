@@ -1,24 +1,25 @@
 .contact-us {
   padding-top: 48px;
 
-  &__heading {
-    font-size: 24px;
-    margin: 13px 0 4px;
-    text-align: center;
+  /* code for the section-heading is moved globally */
+  // &__heading {
+  //   font-size: 24px;
+  //   margin: 13px 0 4px;
+  //   text-align: center;
 
-    @include atMedium {
-      font-size: 50px;
-      margin: 54px 0 13px;
-    }
-    @include atLarge {
-      font-size: 40px;
-      margin: 23px 0 6px;
-    }
-    @include atLarger {
-      font-size: 50px;
-      margin: 42px 0 13px;
-    }
-  }
+  //   @include atMedium {
+  //     font-size: 50px;
+  //     margin: 54px 0 13px;
+  //   }
+  //   @include atLarge {
+  //     font-size: 40px;
+  //     margin: 23px 0 6px;
+  //   }
+  //   @include atLarger {
+  //     font-size: 50px;
+  //     margin: 42px 0 13px;
+  //   }
+  // }
 
   &__sub-heading {
     font-size: 12px;

@@ -1,0 +1,77 @@
+.company {
+  padding-top: 48px;
+
+  &__about-company {
+    margin-bottom: 130px;
+    &__heading {
+      margin-bottom: 13px;
+  
+      @include atMedium {
+        margin-bottom: 38px;
+      }
+  
+      @include atLarge {
+        margin-bottom: 17px;
+      }
+  
+      @include atLarger {
+        margin-bottom: 38px;
+      }
+    }
+  
+    &__detail {
+      text-align: center;
+    }
+
+    &__logo-container {
+      @include flexBoxRow;
+      justify-content: center;
+
+      &__logo {
+        width: 100%;
+
+        @include atMedium {
+          width: 50%;
+        }
+
+        @include atLarge {
+          width: 33.33%;
+        }
+
+        img {
+          display: block;
+          margin: auto auto;
+        }
+
+        &--on-medium {
+          @include atMedium {
+            @include flexBoxRow;
+            align-items: center;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &__company-journey {
+    margin-bottom: 98px;
+
+    &__heading {
+      margin-bottom: 13px;
+  
+      @include atMedium {
+        margin-bottom: 38px;
+      }
+  
+      @include atLarge {
+        margin-bottom: 17px;
+      }
+  
+      @include atLarger {
+        margin-bottom: 38px;
+      }
+    }
+  }
+}
