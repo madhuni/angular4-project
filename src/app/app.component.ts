@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  onActivate() {
+    // scrolling to the top when the route changes
+    window.scrollTo(0, 0);
+  }
 }
