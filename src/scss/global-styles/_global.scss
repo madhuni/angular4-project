@@ -7,3 +7,36 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.section-heading {
+  font-size: 24px;
+  margin: 13px 0 4px;
+  text-align: center;
+
+  @include atMedium {
+    font-size: 50px;
+    margin: 54px 0 13px;
+  }
+  @include atLarge {
+    font-size: 40px;
+    margin: 23px 0 6px;
+  }
+  @include atLarger {
+    font-size: 50px;
+    margin: 42px 0 13px;
+  }
+}
+
+.section-text {
+  font-size: 12px;
+
+  @include atMedium {
+    font-size: 22px;
+  }
+  @include atLarge {
+    font-size: 15px;
+  }
+  @include atLarger {
+    font-size: 22px;
+  }
+}
