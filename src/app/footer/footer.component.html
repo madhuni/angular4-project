@@ -20,10 +20,10 @@
         <div class="footer__about-company-container__company-contacts-container__contact-us">
           <h4>Contact Us</h4>
           <ul class="contact-types">
-            <li class="contact-types__item"><a routerLink="/contact-us">General Queries</a></li>
-            <li class="contact-types__item"><a routerLink="/contact-us">Careers</a></li>
-            <li class="contact-types__item"><a routerLink="/contact-us">Media Enquiries</a></li>
-            <li class="contact-types__item"><a routerLink="/contact-us">Become a reseller / Distributor</a></li>
+            <li class="contact-types__item"><a (click)='loadGeneralQuery()'>General Queries</a></li>
+            <li class="contact-types__item"><a (click)='loadCareers()'>Careers</a></li>
+            <li class="contact-types__item"><a (click)='loadMediaQuery()'>Media Enquiries</a></li>
+            <li class="contact-types__item"><a (click)='loadBecomeReseller()'>Become a reseller / Distributor</a></li>
           </ul>
         </div>
       </div>
