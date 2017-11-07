@@ -13,7 +13,7 @@
     </div>
     <ul class="nav__list" [ngClass]="{ 'nav__list--active' : isIn }">
       <li class="nav__list__item">
-        <a class="links" routerLink="/">Home</a>
+        <a class="links" routerLink="/" (click)="toggleState()">Home</a>
       </li>
       <li class="nav__list__item nav__list__item--have-sub-list">
         <a class="links links-disable">Products</a>
@@ -22,25 +22,25 @@
           <li class="nav__list__item__sub-list__item have-top-border">
             <i class="fa fa-angle-right i-hide"></i>
             <img src="http://via.placeholder.com/60x60" alt="Halo" class="image-hide" width="60" height="60">
-            <a class="sub-links" routerLink="/products/halo">Halo</a>
+            <a class="sub-links" routerLink="/products/halo" (click)="toggleState()">Halo</a>
           </li>
           <li class="nav__list__item__sub-list__item">
             <i class="fa fa-angle-right i-hide"></i>
             <img src="http://via.placeholder.com/60x60" alt="Pentagram" class="image-hide" width="60" height="60">
-            <a class="sub-links" routerLink="/products/pentagram">Pentagram</a>
+            <a class="sub-links" routerLink="/products/pentagram" (click)="toggleState()">Pentagram</a>
           </li>
           <li class="nav__list__item__sub-list__item no-bottom-border">
             <i class="fa fa-angle-right i-hide"></i>
             <img src="http://via.placeholder.com/60x60" alt="Estrella" class="image-hide" width="60" height="60">
-            <a class="sub-links" routerLink="/products/estrella">Estrella</a>
+            <a class="sub-links" routerLink="/products/estrella" (click)="toggleState()">Estrella</a>
           </li>
         </ul>
       </li>
       <li class="nav__list__item">
-        <a class="links" routerLink="/company">About</a>
+        <a class="links" routerLink="/company" (click)="toggleState()">About</a>
       </li>
       <li class="nav__list__item">
-        <a class="links" routerLink="/">Media</a>
+        <a class="links" routerLink="/" (click)="toggleState()">Media</a>
       </li>
     </ul>
   </div>

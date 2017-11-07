@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   toggleState() {
     let bool: boolean = this.isIn;
     this.isIn = bool === false ? true : false;
-    console.log('the condition is : ', this.isIn);
   }
 
   ngOnInit() {}
