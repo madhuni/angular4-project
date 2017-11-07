@@ -18,7 +18,10 @@ const appRoutes: Routes = [
   { path: 'products/halo', component: EtherealHaloComponent },
   { path: 'products/pentagram', component: EtherealPentagramComponent },
   { path: 'products/estrella', component: EtherealEstrellaComponent },
-  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'contact-us/general-queries', component: ContactUsComponent },
+  { path: 'contact-us/careers', component: ContactUsComponent },
+  { path: 'contact-us/media-enquiries', component: ContactUsComponent },
+  { path: 'contact-us/become-a-reseller-distributor', component: ContactUsComponent },
   { path: 'company', component: CompanyComponent }
 ];
 @NgModule({
