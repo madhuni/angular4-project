@@ -2,11 +2,11 @@
   <div class="wrapper nav__wrapper">
     <div class="nav__header">
       <a routerLink="/" class="nav__header__brand">
-        <img src="assets/images/header.component.images/company-logo.svg" alt="Logo" width="18" height="18">
+        <img src="assets/images/header.component.images/company-logo.svg" alt="Logo" width="25" height="25">
       </a>
     </div>
     <div class="nav__company-name hide-if-not-small">
-      <img src="assets/images/header.component.images/company-name.svg" height="12" width="51" alt="Name">
+      <img src="assets/images/header.component.images/company-name.svg" height="25" width="80" alt="Name">
     </div>
     <div class="nav__toggle-btn hide-if-not-small">
       <i class="fa" [ngClass]="{ 'fa-bars' : !isIn, 'fa-close' : isIn}" area-hidden="true" (click)="toggleState()"></i>
