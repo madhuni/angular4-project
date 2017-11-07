@@ -31,6 +31,18 @@
     width: 15%;
   }
 
+  &__toggle-btn {
+    font-size: 25px;
+
+    i {
+      transition: color .4s ease;
+    }
+
+    i:hover {
+      color: #a5a5a5;
+    }
+  }
+
   &__header {
     @include atMedium {
       margin-right: 5%;
