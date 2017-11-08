@@ -28,5 +28,13 @@ export class AppComponent {
       $('.nav__list__item--have-sub-list').addClass('active');
     }
 
+    if (currentLocation === '/' || '') {
+      $('body').removeClass('padding-on').addClass('padding-off');
+    }
+
+    if (currentLocation !== '/' || '') {
+      $('body').removeClass('padding-off').addClass('padding-on');
+    }
+
   }
 }

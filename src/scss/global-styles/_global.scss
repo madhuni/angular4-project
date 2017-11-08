@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -13,8 +14,24 @@ body {
   min-height: 100%;
 
   @include fullHeightNavbar {
-    padding-bottom: 213px;
+    padding-bottom: 212.3px;
   }
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.padding-on {
+  padding-bottom: 212.3px;
+
+  @include atMedium {
+    padding-bottom: 162px;
+  }
+}
+
+.padding-off {
+  padding-bottom: 0;
 }
 
 .wrapper {
