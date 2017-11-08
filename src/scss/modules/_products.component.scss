@@ -144,6 +144,14 @@
         justify-content: flex-start;
       }
 
+      li:last-child {
+
+        @include fullHeightNavbar {
+          margin-bottom: 0;
+          padding-bottom: 64px;
+        }
+      }
+
       &__item {
         width: 240px;
         margin: 0 auto 64px;
