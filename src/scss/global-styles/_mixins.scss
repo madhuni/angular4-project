@@ -42,6 +42,25 @@
   flex-direction: column;
 }
 
-@mixin myFont {
-  font-family: 'Pacifico', Fallback, sans-serif;
+@mixin chivoRegular {
+  font-family: 'ChivoRegular', Fallback, sans-serif;
+}
+
+@mixin robotoThin {
+  font-family: 'RobotoThin', Fallback, sans-serif;
+}
+@mixin robotoRegular {
+  font-family: 'RobotoRegular', Fallback, sans-serif;
+}
+@mixin robotoMedium {
+  font-family: 'RobotoMedium', Fallback, sans-serif;
+}
+@mixin robotoLight {
+  font-family: 'RobotoLight', Fallback, sans-serif;
+}
+@mixin openSansRegular {
+  font-family: 'OpenSansRegular', Fallback, sans-serif;
+}
+@mixin openSansLight {
+  font-family: 'OpenSansLight', Fallback, sans-serif;
 }
