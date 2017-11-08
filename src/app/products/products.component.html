@@ -2,18 +2,19 @@
   <!-- Video of product will go full width -->
   <header class="product__video-section">
     <div class="product__video-container">
-      <video loop muted autoplay poster="{{ product.header.firstFrameImage}}" class="product__video-container__video">
-        <source src="{{ product.header.productVideoSrc}}" type="video/mp4">
+      <video loop muted autoplay poster="{{ product.header.firstFrameImage }}" class="product__video-container__video" [ngClass]="{ 'product__video-container__video--for-estrella' : isEstrella }">
+        <source src="{{ product.header.productVideoSrc }}" type="video/mp4">
       </video>
     </div>
-    <div class="product__product-heading-container">
+    <div class="wrapper product__product-heading-container" [ngClass]="{ 'product__product-heading-container--for-estrella' : isEstrella }">
       <h1 class="product__product-heading-container__heading">{{ product.header.productName }}</h1>
       <h3 class="product__product-heading-container__sub-heading">{{ product.header.productTagLine }}</h3>
+      <h3 class="product__product-heading-container__sub-heading--for-estrella" [hidden]="!isEstrella">{{ product.header.extraLine }}</h3>
     </div>
   </header>
 
-  <div class="product-wrapper wrapper">
-    <section class="product__about-product">
+  <div class="section-wrapper">
+    <section class="product__about-product wrapper" [ngClass]="{ 'product__about-product--hide' : noAbout }">
       <h2 class="product__about-product__heading section-heading">
         {{ product.about.productName }}
       </h2>
@@ -26,8 +27,10 @@
         <img srcset="{{ product.about.pictures.defaultImage }} 320w" alt="Pentagram Image">
       </picture>
     </section>
+  </div>
 
-    <section class="product__features">
+  <div class="section-wrapper section-wrapper--black">
+    <section class="product__features wrapper" [ngClass]="{ 'product__features--hide' : noFeature }">
       <h2 class="product__features__heading section-heading">
         Features
       </h2>
@@ -39,11 +42,14 @@
         </li>
       </ul>
     </section>
+  </div>
 
-    <section class="product__tech-specs">
+  <div class="section-wrapper">
+    <section class="product__tech-specs wrapper" [ngClass]="{ 'product__tech-specs--hide' : noTechSpecs }">
       <h2 class="product__tech-specs__heading section-heading">
         Technical Specifications
       </h2>
     </section>
   </div>
+
 </div>
