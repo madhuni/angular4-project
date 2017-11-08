@@ -53,6 +53,7 @@
       }
 
       h4 {
+        @include chivoRegular;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 1.4px;
@@ -63,6 +64,7 @@
 
         @include fullHeightNavbar {
           padding-left: 5px;
+          width: 40%;
         }
 
         @include atMedium {
@@ -111,16 +113,18 @@
         @include fullHeightNavbar {
           text-align: right;
           padding-right: 5px;
+          width: 60%;
         }
 
         @include atMedium {
           padding: 0;
           width: 30%;
-          max-width: 150px;
+          max-width: 170px;
           padding-right: 10px;
         }
 
         .contact-types {
+          @include robotoLight;
           font-size: 10px;
           font-weight: 100;
           padding: 0;
@@ -149,6 +153,7 @@
   }
 
   &__copyright-container {
+    @include robotoThin;
     @include flexBoxRow;
     width: 100%;
     color: #fff;
