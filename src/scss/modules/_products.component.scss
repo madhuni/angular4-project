@@ -99,6 +99,10 @@
 
   &__about-product {
 
+    @include fullHeightNavbar {
+      padding-bottom: 30px;
+    }
+
     &--hide {
       display: none;
     }
@@ -185,7 +189,7 @@
       &__item:hover {
 
         @include atLarge {
-          transform: scale(1.2);
+          transform: scale(1.13);
         }
       }
     }
