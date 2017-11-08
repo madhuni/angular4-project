@@ -9,25 +9,31 @@
 }
 
 .section-heading {
+  @include chivoRegular;
   font-size: 24px;
-  margin: 13px 0 4px;
+  margin: 0 0 4px;
+  padding-top: 13px;
   text-align: center;
 
   @include atMedium {
     font-size: 50px;
-    margin: 54px 0 13px;
+    margin: 0 0 13px;
+    padding-top: 54px;
   }
   @include atLarge {
     font-size: 40px;
-    margin: 23px 0 6px;
+    margin: 0 0 6px;
+    padding-top: 23px;
   }
   @include atLarger {
     font-size: 50px;
-    margin: 42px 0 13px;
+    margin: 0 0 13px;
+    padding-top: 42px;
   }
 }
 
 .section-text {
+  @include openSansLight;
   font-size: 15px;
 
   @include atMedium {
