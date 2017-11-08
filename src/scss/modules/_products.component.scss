@@ -4,10 +4,6 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
-    background: url('../assets/images/products.component.images/pentagram-images/pentagram-first-frame.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 
   &__video-container {
@@ -26,6 +22,10 @@
       left: 0;
       width: 100%;
       height: 100%;
+
+      &--for-estrella {
+        filter: blur(5px);
+      }
     }
   }
 
@@ -35,7 +35,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    width: 70%;
+    width: 100%;
     color: white;
     text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
 
@@ -44,7 +44,15 @@
       width: 94%;
     }
 
+    &--for-estrella {
+      color: black;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     &__heading {
+      @include chivoRegular;
       font-size: 35px;
       margin: 0 0 7px;
 
@@ -60,6 +68,7 @@
     }
 
     &__sub-heading {
+      @include openSansRegular;
       font-size: 20px;
       margin: 0;
 
@@ -72,10 +81,27 @@
         font-size: 30px;
         margin: 0;
       }
+
+      &--for-estrella {
+
+        @include atMedium {
+          width: 400px;
+          height: 60px;
+          margin: 20px auto 0;
+          background-color: #3b70ec;
+          vertical-align: middle;
+          line-height: 50px;
+          border-radius: 20px;
+        }
+      }
     }
   }
 
   &__about-product {
+
+    &--hide {
+      display: none;
+    }
 
     &__heading {
       margin-bottom: 13px;
@@ -100,6 +126,10 @@
 
   &__features {
 
+    &--hide {
+      display: none;
+    }
+
     &__heading {
       margin-bottom: 64px;
     }
@@ -107,6 +137,7 @@
     &__features-list {
       list-style: none;
       padding: 0;
+      margin-bottom: 0;
 
       @include atMedium {
         @include flexBoxRow;
@@ -116,6 +147,8 @@
       &__item {
         width: 240px;
         margin: 0 auto 64px;
+        transform: scale(1);
+        transition: all .3s ease-in-out;
 
         @include atLarge {
           margin-bottom: 72px;
@@ -128,17 +161,42 @@
         }
 
         .feature-heading {
+          @include chivoRegular;
           font-size: 20px;
           margin: 0 0 16px;
           text-align: center;
         }
 
         .feature-detail {
+          @include openSansLight;
           text-align: center;
           font-size: 14px;
         }
       }
+
+      &__item:hover {
+
+        @include atLarge {
+          transform: scale(1.2);
+        }
+      }
     }
 
+  }
+
+  &__tech-specs {
+
+    &--hide {
+      display: none;
+    }
+  }
+}
+
+.section-wrapper {
+  width: 100%;
+
+  &--black {
+    background-color: $backgroundColor;
+    color: #fff;
   }
 }
