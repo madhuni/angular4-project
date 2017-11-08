@@ -36,42 +36,42 @@ export class EtherealPentagramComponent implements OnInit {
       }
     },
     features: [{
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-1.svg',
       altNameForImage: 'Feature Image',
       featureName: 'DESKTOP SIZE',
       featureDetail: 'Designed and engineered to occupy minimal floor space.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-2.svg',
       altNameForImage: 'Feature Image',
       featureName: '5-AXIS SIMULTANEOUS KINEMATICS',
       featureDetail: '5 axis simulatneous movement to help reduce machining time.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-3.svg',
       altNameForImage: 'Feature Image',
       featureName: 'HIGH ACCURACY DRIVE MECHANISM',
       featureDetail: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-4.svg',
       altNameForImage: 'Feature Image',
       featureName: 'ENCODER FEEDBACK',
       featureDetail: 'Ensures zero by-pass of machining code.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-5.svg',
       altNameForImage: 'Feature Image',
       featureName: 'DEDICATED PC-BASED CONTROLLER',
       featureDetail: 'Real time monitoring and control of the machining job in progress.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-6.svg',
       altNameForImage: 'Feature Image',
       featureName: 'USER FRIENDLY INTERFACE',
       featureDetail: 'Ensures easy operability and aids in quick familiarization with the machine.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-7.svg',
       altNameForImage: 'Feature Image',
       featureName: 'Z PROBE',
       featureDetail: 'Facilitates auto tool height compensation.'
     }, {
-      featureImage: 'http://via.placeholder.com/168x168',
+      featureImage: 'assets/images/products.component.images/pentagram-images/features/feat-8.svg',
       altNameForImage: 'Feature Image',
       featureName: 'MULTIPLE TOOL SUPPORT',
       featureDetail: 'Permits employment of various tools to machine a spectrum of materials.'
