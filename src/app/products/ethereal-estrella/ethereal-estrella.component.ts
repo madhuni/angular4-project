@@ -8,30 +8,27 @@ export class EtherealEstrellaComponent implements OnInit {
 
   constructor() { }
 
+  public noFeature: boolean = true;
+  public noTechSpecs: boolean = true;
+  public noAbout: boolean = true;
+
+  public isEstrella = true;
+
   products: any[] = [{
     header: {
-      firstFrameImage: 'assets/images/products.component.images/estrella-images/estrella-first-frame.png',
+      firstFrameImage: 'assets/images/products.component.images/estrella-images/estrella-first-frame.jpg',
+      backgroundImage: 'assets/images/products.component.images/estrella-images/estrella-first-frame.jpg',
       productVideoSrc: 'assets/videos/products.component.videos/estrella-videos/estrella-video.mp4',
       productName: 'The Ethereal Estrella',
-      productTagLine: 'A world class 3D-printer'
+      productTagLine: 'A dual extruder printer for your everyday 3D printing needs!',
+      extraLine: 'Launching at CES 2018'
     },
     about: {
-      productName: 'The Ethereal Estrella',
+      productName: 'The Ethereal halo',
       details: [],
-      pictures: {
-        defaultImage: 'assets/images/products.component.images/estrella-images/estrella--small.svg',
-        smallSizeImage: 'assets/images/products.component.images/estrella-images/estrella--small.svg',
-        mediumSizeImage: 'assets/images/products.component.images/estrella-images/estrella--medium.svg',
-        largeSizeImage: 'assets/images/products.component.images/estrella-images/estrella--large.svg',
-        largerSizeImage: 'assets/images/products.component.images/estrella-images/estrella--larger.svg'
-      }
+      pictures: {}
     },
-    features: [{
-      featureImage: 'http://via.placeholder.com/168x168',
-      altNameForImage: 'Feature Image',
-      featureName: 'No Features Available',
-      featureDetail: 'Features yet to be defined.'
-    }],
+    features: [],
     techSpecs: []
   }];
 

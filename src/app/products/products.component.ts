@@ -7,6 +7,24 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProductsComponent {
 
   @Input()
+  isHalo: boolean;
+
+  @Input()
+  isPentagram: boolean;
+
+  @Input()
+  isEstrella: boolean;
+
+  @Input()
   products: any[] = [];
+
+  @Input()
+  noAbout: boolean;
+
+  @Input()
+  noFeature: boolean;
+
+  @Input()
+  noTechSpecs: boolean;
 
 }
