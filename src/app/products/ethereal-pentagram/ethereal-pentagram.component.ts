@@ -8,9 +8,14 @@ export class EtherealPentagramComponent implements OnInit {
 
   constructor() { }
 
+  public noFeature: boolean = false;
+  public noTechSpecs: boolean = true;
+  public noAbout: boolean = false;
+
   products: any[] = [{
     header: {
       firstFrameImage: 'assets/images/products.component.images/pentagram-images/pentagram-first-frame.png',
+      backgroundImage: 'assets/images/products.component.images/pentagram-images/pentagram-first-frame.png',
       productVideoSrc: 'assets/videos/products.component.videos/pentagram-videos/pentagram-video.mp4',
       productName: 'The Ethereal Pentagram',
       productTagLine: 'World\'s First Desktop Simultaneous 5 Axis CNC Machine'
@@ -73,7 +78,7 @@ export class EtherealPentagramComponent implements OnInit {
     }],
     techSpecs: []
   }];
-  
+
   ngOnInit() {
   }
 
