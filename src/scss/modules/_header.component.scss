@@ -198,7 +198,8 @@
         color: white;
         width: 420px;
         list-style: none;
-        padding: 20px 0 0;
+        // padding: 20px 0 0;
+        padding: 0;
         top: 48px;
         position: absolute;
         margin-top: 10px;
@@ -233,6 +234,7 @@
         &__item {
           @include flexBoxCol;
           width: 140px;
+          padding: 20px 0;
 
           img {
             margin: 0 auto;
@@ -276,5 +278,13 @@
   
   .have-top-border {
     border-top: 1px solid #95989A;
+  }
+}
+
+.active {
+  @include robotoMedium;
+
+  @include atMedium {
+    background-color: rgb(66, 66, 66);
   }
 }
