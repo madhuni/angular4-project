@@ -1,4 +1,5 @@
 .nav {
+  @include robotoLight;
   background: #222222;
   color: white;
   position: fixed;
@@ -61,7 +62,7 @@
     left: 0px;
     padding: 0 10px 0;
     list-style: none;
-    font-weight: 100;
+    // font-weight: 100;
     letter-spacing: 1.5px;
     background: #222222;
     color: white;
@@ -74,7 +75,7 @@
       color: white;
       width: 100%;
       display: inline-block;
-      font-weight: 400;
+      // font-weight: 400;
       transition: color .4s ease;
 
       &-disable {
@@ -88,7 +89,8 @@
     .links:hover {
       cursor: pointer;
       text-decoration: none;
-      color: #a5a5a5;
+      // color: #a5a5a5;
+      @include robotoMedium;
     }
 
     @include fullHeightNavbar {
@@ -145,7 +147,8 @@
           }
 
           &__item {
-            font-weight: 100;
+            @include robotoThin;
+            // font-weight: 100;
             letter-spacing: 1.5px;
             color: #FFFFFF;
             border-bottom: 1px solid #95989A;
@@ -176,14 +179,15 @@
           color: white;
           width: 91%;
           display: inline-block;
-          font-weight: 400;
+          // font-weight: 400;
           transition: color .4s ease;
         }
 
         .sub-links:hover {
           cursor: pointer;
           text-decoration: none;
-          color: #a5a5a5;
+          // color: #a5a5a5;
+          @include robotoMedium;
         }
 
       }
@@ -204,14 +208,15 @@
 
         .sub-links {
           color: white;
-          font-weight: 400;
+          // font-weight: 400;
           transition: color .4s ease;
         }
 
         .sub-links:hover {
           cursor: pointer;
           text-decoration: none;
-          color: #a5a5a5;
+          // color: #a5a5a5;
+          @include robotoMedium;
         }
 
         .arrow-up {
