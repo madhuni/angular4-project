@@ -136,6 +136,10 @@
 
     &__heading {
       margin-bottom: 64px;
+
+      @include fullHeightNavbar {
+        margin-bottom: 32px;
+      }
     }
 
     &__features-list {
@@ -170,13 +174,22 @@
           border-radius: 50%;
           display: block;
           margin: 0 auto 20px;
+
+          @include fullHeightNavbar {
+            width: 130px;
+            height: 130px;
+          }
         }
 
         .feature-heading {
           @include chivoRegular;
-          font-size: 20px;
+          font-size: 18px;
           margin: 0 0 16px;
           text-align: center;
+
+          @include atMedium {
+            font-size: 20px;
+          }
         }
 
         .feature-detail {
