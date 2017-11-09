@@ -7,7 +7,8 @@
         <div class="media__item__img-container">
           <img src="{{ item.imgLink }}" alt="Media Image" width="300" height="226">
           <div class="overlay">
-            <a href="{{ item.mediaLink }}" target="_blank" class="btn btn-primary">{{ item.btnTitle }}</a>
+            <button class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isMediaPlayble }" (click)="openModal()">{{ item.btnTitle }}</button>
+            <a href="{{ item.mediaLink }}" target="_blank" class="btn btn-primary" [ngClass]="{  'btn--hidden' : item.isMediaPlayble }">{{ item.btnTitle }}</a>
           </div>
         </div>
         <div class="media__item__detail-container">
@@ -19,6 +20,12 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="modal-container" [ngClass]="{ 'modal-container--active-modal' : isModalOpen }" (click)="closeModal()">
+    <img src="assets/images/app.component.images/cross-btn.svg" alt="Cross" width="30" height="30" class="cross-btn">
+    <iframe width="720" height="400" src="https://www.youtube-nocookie.com/embed/pHbs1GqRA94?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0"></iframe>
   </div>
 
 </div>
