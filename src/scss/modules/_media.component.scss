@@ -27,11 +27,11 @@
         left: 0;
         right: 0;
         height: 0;
-        // background: rgba(255, 255, 255, 0.8);
         background: rgba(0, 0, 0, 0.5);
         transition: all .2s ease-in;
 
-        a {
+        a,
+        button {
           @include robotoRegular;
           width: 100px;
           height: 40px;
@@ -43,12 +43,14 @@
           left: 50%;
           transform: translate(-50%, -50%);
         }
+
+        .btn--hidden {
+          display: none;
+        }
       }
     }
 
     &__img-container:hover .overlay {
-      // z-index: 1;
-      // opacity: 1;
       height: 100%;
     }
 
