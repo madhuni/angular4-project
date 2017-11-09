@@ -1,30 +1,26 @@
 <div class="media">
-  <h2 class="section-heading">This is a sample heading for media</h2>
-  <div class="wrapper media__item-container">
-    
-    <div class="media__item">
-      <div class="media__item__image-container">
-        <a routerLink="/media">
-          <img src="https://cdn.yourstory.com/wp-content/uploads/2015/09/Ethereal-Machines1.jpg" alt="Media Image" width="500" height="250">
-        </a>
-      </div>
-      <div class="media__item__heading-container">
-        <div class="heading"><a routerLink="/media">Thie is the tedex Link</a></div>
+  <div class="wrapper media-wrapper">
+    <h2 class="section-heading">Media and press release</h2>
+
+    <div class="media__container">
+      <div class="media__item" *ngFor="let item of contents">
+        <div class="media__item__img-container">
+          <img src="{{ item.imgLink }}" alt="Media Image" width="300" height="226">
+          <div class="overlay">
+            <a routerLink="{{ item.mediaLink }}" target="_blank" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="media__item__detail-container">
+          <h4>{{ item.heading }}</h4>
+          <div class="media__item__detail-container__date-publisher">
+            <span class="date">{{ item.date }}</span>
+            <span class="publisher">{{ item.publisher }}</span>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="media__item">
-      <div class="media__item__image-container">
-        <a routerLink="/media">
-          <img src="https://3.bp.blogspot.com/-uBvDo8va-PU/VwJup1-DowI/AAAAAAAAFxs/Y8UNZREHd84nPDW6MeAMDSAOU-Cr5kwzg/s1600/DSCN1075.JPG" alt="Media Image" width="500" height="250">
-        </a>
-      </div>
-      <div class="media__item__heading-container">
-        <div class="heading"><a routerLink="/media">Thie is the tedex Link</a></div>
-      </div>
-    </div>
-
   </div>
+
 </div>
 
 <!-- Adding footer for the website. -->
