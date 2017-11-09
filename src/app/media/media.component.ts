@@ -9,23 +9,26 @@ export class MediaComponent implements OnInit {
   constructor() { }
 
   public contents: any[] = [{
-    imgLink: 'http://www.emwcenter.com/wp-content/uploads/Online-articles.jpg',
-    mediaLink: '/media',
-    heading: 'Sample Text for the head line text',
-    date: 'May 2014',
-    publisher: 'YourStory'
+    imgLink: 'assets/images/media.component.images/documentry.png',
+    mediaLink: 'https://youtu.be/6dun2zbYJmc',
+    heading: 'Documentary by Govt.of India',
+    btnTitle: 'Play',
+    date: 'August 2016',
+    publisher: 'YouTube'
   }, {
     imgLink: 'https://s3.amazonaws.com/marquee-test-akiaisur2rgicbmpehea/NgZHitNrQkqNOedVqpbl_EditorNote.jpg',
-    mediaLink: '/media',
-    heading: 'Sample Text for the head line text',
-    date: 'May 2014',
-    publisher: 'YourStory'
+    mediaLink: 'https://yourstory.com/2015/09/ethereal-machines/',
+    heading: '63 rejections to break even',
+    btnTitle: 'Learn More',
+    date: 'September 2015',
+    publisher: 'YOURSTORY'
   }, {
-    imgLink: 'http://www.radio.gov.pk/digital_images/large/2017-01-20/top-news-stories-and-editorials-from-national-newspapers-1484914847-3271.jpg',
-    mediaLink: '/media',
-    heading: 'Sample Text for the head line text',
-    date: 'May 2014',
-    publisher: 'YourStory'
+    imgLink: 'https://misk.org.sa/wp-content/uploads/2016/02/tedx-youth.png',
+    mediaLink: 'https://youtu.be/yi4Qocbq2n4',
+    btnTitle: 'Play',
+    heading: 'TEDxYouth',
+    date: 'January 2016',
+    publisher: 'TEDx Talks'
   }];
 
   ngOnInit() {

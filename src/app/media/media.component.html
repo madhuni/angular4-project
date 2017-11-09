@@ -7,7 +7,7 @@
         <div class="media__item__img-container">
           <img src="{{ item.imgLink }}" alt="Media Image" width="300" height="226">
           <div class="overlay">
-            <a routerLink="{{ item.mediaLink }}" target="_blank" class="btn btn-primary">Learn More</a>
+            <a href="{{ item.mediaLink }}" target="_blank" class="btn btn-primary">{{ item.btnTitle }}</a>
           </div>
         </div>
         <div class="media__item__detail-container">
