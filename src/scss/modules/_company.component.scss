@@ -3,6 +3,19 @@
 
   &__about-company {
     margin-bottom: 64px;
+
+    &__logo {
+      display: block;
+      margin: 30px auto 0;
+      width: 100px;
+      height: 100px;
+
+      @include atMedium {
+        margin-top: 54px;
+        width: 150px;
+        height: 150px;
+      }
+    }
     
     &__heading {
       margin-bottom: 13px;
@@ -30,6 +43,7 @@
 
       &__logo {
         width: 100%;
+        padding: 10px 0;
 
         @include atMedium {
           width: 50%;
@@ -37,11 +51,29 @@
 
         @include atLarge {
           width: 33.33%;
+          padding: 0;
         }
 
         img {
           display: block;
           margin: auto auto;
+        }
+
+        .make-in-india {
+          @include fullHeightNavbar {
+            height: 100px;
+          }
+        }
+        .startup-india {
+          @include fullHeightNavbar {
+            height: 40px;
+          }
+        }
+        .iso {
+          @include fullHeightNavbar {
+            height: 100px;
+            width: 100px;
+          }
         }
 
         &--on-medium {
