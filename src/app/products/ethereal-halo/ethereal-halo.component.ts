@@ -27,7 +27,7 @@ export class EtherealHaloComponent implements OnInit {
       details: [
         'The Ethereal Halo has been designed to bring about a metamorphosis to the world of manufacturing and kick off the concept of hybrid manufacturing. Ethereal Halo is the world’s first consumer oriented 5-axis 3-D printer and 5-axis CNC Router.',
 
-        'Ethereal Halo is a machine that introduces Hybrid Manufacturing to the world and combines both the technologies of subtractive manufacturing and additive manufacturing into one bundle. A single machine is capable of both the processes of SM and AM to high degrees of accuracy.',
+        'Ethereal Halo is a machine that introduces Hybrid Manufacturing to the world and combines both the technologies of subtractive manufacturing and additive manufacturing into one bundle, with a high degree of accuracy.',
 
         'The Halo can equip an entire spectrum ranging from the hobbyist to an industry with quick prototyping and manufacturing abilities. A 5-axis printer and a 5-axis CNC Router bundled up into one single affordable machine heralds the future.'
       ],
@@ -106,12 +106,12 @@ export class EtherealHaloComponent implements OnInit {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-5.svg',
       altNameForImage: 'Tech Spec Image',
       techSpecName: 'SUBTRACTIVE MANUFACTURING MATERIALS',
-      techSpecDetail: 'Wax, foam, nylon, plastics and soft metals.'
+      techSpecDetail: 'Choice of a plethora of materials'
     }, {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-6.svg',
       altNameForImage: 'Tech Spec Image',
       techSpecName: 'ADDITIVE MANUFACTURING MATERIALS',
-      techSpecDetail: 'ABS, PLA, PC, PVA, NYLON, PET-G'
+      techSpecDetail: 'Supports most 3D printing filaments'
     }, {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-7.svg',
       altNameForImage: 'Tech Spec Image',

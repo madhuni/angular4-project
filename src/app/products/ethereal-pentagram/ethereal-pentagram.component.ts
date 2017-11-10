@@ -27,7 +27,7 @@ export class EtherealPentagramComponent implements OnInit {
       details: [
         'The Pentagram has been designed to be the world\'s first desktop simultaneous 5 axis subtractive manufacturing machine. Equipped with the capabilities of machining a plethora of materials, the Pentagram is poised to disrupt the manufacturing industry.',
 
-        'Pentagram has been made keeping in mind both industrial users and amateur users. The Pentagram is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.'
+        'Pentagram has been made keeping in mind both the industrial users and amateur users. The Pentagram is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.'
       ],
       pictures: {
         defaultImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--small.png',

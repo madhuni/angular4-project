@@ -21,16 +21,16 @@ export class ContactUsComponent implements OnInit {
   changeContentOnLinkChange() {
     const link: string = window.location.pathname;
 
-    if (link === '/contact-us/general-queries') {
+    if (link.indexOf('general-queries') !== -1) {
       this.natureOfEnquiry = 'General Queries';
       this.tagline = this.tagLines.generalQueries;
-    } else if (link === '/contact-us/careers') {
+    } else if (link.indexOf('careers') !== -1) {
       this.natureOfEnquiry = 'Careers';
       this.tagline = this.tagLines.careers;
-    } else if (link === '/contact-us/media-enquiries') {
+    } else if (link.indexOf('media-enquiries') !== -1) {
       this.natureOfEnquiry = 'Media Enquiries';
       this.tagline = this.tagLines.mediaEnquiries;
-    } else {
+    } else if (link.indexOf('become-a-reseller-distributor') !== -1) {
       this.natureOfEnquiry = 'Becoming a reseller/distributor';
       this.tagline = this.tagLines.becomeReseller;
     }
