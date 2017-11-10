@@ -13,6 +13,7 @@ import { EtherealPentagramComponent } from './products/ethereal-pentagram/ethere
 import { EtherealEstrellaComponent } from './products/ethereal-estrella/ethereal-estrella.component';
 import { HomeComponent } from './home/home.component';
 import { MediaComponent } from './media/media.component';
+import { PressReleaseComponent } from './media/press-release/press-release.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   { path: 'contact-us/media-enquiries', component: ContactUsComponent },
   { path: 'contact-us/become-a-reseller-distributor', component: ContactUsComponent },
   { path: 'company', component: CompanyComponent },
-  { path: 'media', component: MediaComponent }
+  { path: 'media', component: MediaComponent },
+  { path: 'media/press-release', component: PressReleaseComponent }
 ];
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     EtherealPentagramComponent,
     EtherealEstrellaComponent,
     HomeComponent,
-    MediaComponent
+    MediaComponent,
+    PressReleaseComponent
   ],
   imports: [
     BrowserModule,

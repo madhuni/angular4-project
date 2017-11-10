@@ -64,3 +64,15 @@
 @mixin openSansLight {
   font-family: 'OpenSansLight', Fallback, sans-serif;
 }
+@mixin ralewayLight {
+  font-family: 'RalewayLight', Fallback, sans-serif;
+}
+@mixin ralewayLightItalic {
+  font-family: 'RalewayLightItalic', Fallback, sans-serif;
+}
+@mixin ralewayRegular {
+  font-family: 'RalewayRegular', Fallback, sans-serif;
+}
+@mixin ralewayMedium {
+  font-family: 'RalewayMedium', Fallback, sans-serif;
+}

@@ -16,7 +16,6 @@ export class AppComponent {
     const currentLocation: string = window.location.pathname;
 
     if (currentLocation !== '/products/halo' || '/products/pentagram' || '/products/estrella') {
-      console.log('if condition is true now');
       $('.nav__list__item--have-sub-list').removeClass('active');
     }
 

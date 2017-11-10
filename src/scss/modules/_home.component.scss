@@ -5,3 +5,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.learn-more-image {
+  position: absolute;
+  bottom: 10.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.learn-more-image:hover {
+  cursor: pointer;
+}
