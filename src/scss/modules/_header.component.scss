@@ -194,16 +194,21 @@
 
       @include atMedium {
         display: none;
-        background-color: #222222;
+        // @include flexBoxRow;
+        // justify-content: space-between;
+        // background-color: #222222;
+        background-color:rgba(34, 34, 34, 0.95);
         color: white;
-        width: 420px;
+        // width: 420px;
+        width: 440px;
         list-style: none;
         // padding: 20px 0 0;
-        padding: 0;
+        padding: 0 10px;
         top: 48px;
         position: absolute;
         margin-top: 10px;
-        right: -140px;
+        // right: -140px;
+        right: -150px;
         border-radius: 10px;
         box-shadow: 7px 6px 5px -1px rgba(56, 51, 51, 0.54);
 
@@ -225,7 +230,8 @@
           height: 0;
           position: absolute;
           top: -10px;
-          left: 200px;
+          // left: 200px;
+          left: 210px;
           border-left: 11px solid transparent;
           border-right: 11px solid transparent;
           border-bottom: 11px solid #222;
@@ -234,7 +240,8 @@
         &__item {
           @include flexBoxCol;
           width: 140px;
-          padding: 20px 0;
+          padding: 20px 0 0;
+          margin: 5px 0;
 
           img {
             margin: 0 auto;
@@ -285,6 +292,7 @@
   @include robotoMedium;
 
   @include atMedium {
-    background-color: rgb(66, 66, 66);
+    // background-color: rgb(66, 66, 66);
+    border-bottom: 5px solid $gold3;
   }
 }

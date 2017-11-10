@@ -16,6 +16,9 @@ export class ProductsComponent {
   isEstrella: boolean;
 
   @Input()
+  isModalOpen: boolean;
+
+  @Input()
   products: any[] = [];
 
   @Input()
@@ -26,5 +29,11 @@ export class ProductsComponent {
 
   @Input()
   noTechSpecs: boolean;
+
+  @Input()
+  openModal;
+
+  @Input()
+  closeModal;
 
 }

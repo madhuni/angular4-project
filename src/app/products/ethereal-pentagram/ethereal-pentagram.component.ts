@@ -12,11 +12,13 @@ export class EtherealPentagramComponent implements OnInit {
   public noTechSpecs: boolean = true;
   public noAbout: boolean = false;
 
+  public isPentagram: boolean = true;
+
   products: any[] = [{
     header: {
-      firstFrameImage: 'assets/images/products.component.images/pentagram-images/pentagram-first-frame.png',
+      firstFrameImage: 'assets/images/products.component.images/pentagram-images/pentagram-first-frame-2.jpg',
       backgroundImage: 'assets/images/products.component.images/pentagram-images/pentagram-first-frame.png',
-      productVideoSrc: 'assets/videos/products.component.videos/pentagram-videos/pentagram-video.mp4',
+      productVideoSrc: 'assets/videos/products.component.videos/pentagram-videos/pentagram-video.mp',
       productName: 'The Ethereal Pentagram',
       productTagLine: 'World\'s First Desktop Simultaneous 5 Axis CNC Machine'
     },
@@ -28,11 +30,11 @@ export class EtherealPentagramComponent implements OnInit {
         'Pentagram has been made keeping in mind both industrial users and amateur users. The Pentagram is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.'
       ],
       pictures: {
-        defaultImage: 'assets/images/products.component.images/pentagram-images/pentagram--small.svg',
-        smallSizeImage: 'assets/images/products.component.images/pentagram-images/pentagram--small.svg',
-        mediumSizeImage: 'assets/images/products.component.images/pentagram-images/pentagram--medium.svg',
-        largeSizeImage: 'assets/images/products.component.images/pentagram-images/pentagram--large.svg',
-        largerSizeImage: 'assets/images/products.component.images/pentagram-images/pentagram--larger.svg'
+        defaultImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--small.png',
+        smallSizeImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--small.png',
+        mediumSizeImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--medium.png',
+        largeSizeImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--large.png',
+        largerSizeImage: 'assets/images/products.component.images/pentagram-images/product-images/pentagram--larger.png'
       }
     },
     features: [{

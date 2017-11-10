@@ -41,7 +41,7 @@ a:hover {
 }
 
 .section-heading {
-  @include chivoRegular;
+  @include ralewayRegular;
   font-size: 24px;
   margin: 0 0 4px;
   // padding-top: 13px;
@@ -66,7 +66,7 @@ a:hover {
 }
 
 .section-text {
-  @include openSansLight;
+  @include ralewayLight;
   font-size: 15px;
 
   @include atMedium {
@@ -109,6 +109,13 @@ a:hover {
     position: absolute;
     top: 15px;
     right: 20px;
+  }
+
+  .cross-btn--black {
+    width: 20px;
+    height: 20px;;
+    top: 15px;
+    right: 10px;
   }
 
   .cross-btn:hover {

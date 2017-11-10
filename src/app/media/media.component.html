@@ -1,6 +1,6 @@
 <div class="media">
   <div class="wrapper media-wrapper">
-    <h2 class="section-heading">Media and press release</h2>
+    <h2 class="section-heading">Media and Press Release</h2>
 
     <div class="media__container">
       <div class="media__item" *ngFor="let item of contents">
@@ -9,6 +9,7 @@
           <div class="overlay">
             <button class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isMediaPlayble }" (click)="openModal()">{{ item.btnTitle }}</button>
             <a href="{{ item.mediaLink }}" target="_blank" class="btn btn-primary" [ngClass]="{  'btn--hidden' : item.isMediaPlayble }">{{ item.btnTitle }}</a>
+            <button class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isPartOfApp }" (click)="openPressReleaseModal()">{{ item.btnTitle }}</button>
           </div>
         </div>
         <div class="media__item__detail-container">
@@ -27,6 +28,12 @@
     <iframe width="720" height="400" src="https://www.youtube-nocookie.com/embed/pHbs1GqRA94?rel=0&amp;controls=0&amp;showinfo=0"
       frameborder="0"></iframe>
   </div>
+
+  <div class="modal-container modal-container--press-release" [ngClass]="{ 'modal-container--active-modal' : isPressReleaseModalOpen }">
+    <img src="assets/images/app.component.images/cross-btn-black.svg" alt="Cross" width="30" height="30" class="cross-btn cross-btn--black" (click)="closePressReleaseModal()" style="color: black;">
+    <app-press-release (click)="disableClick()"></app-press-release>
+  </div>
+
 
 </div>
 
